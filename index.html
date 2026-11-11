@@ -931,7 +931,9 @@ svg { display: block; }
 .hero-meta { grid-template-columns: 1fr 1fr; gap: 12px 40px; }
 .hero-meta .hm { font-size: clamp(13px, 1.15vw, 16.5px); line-height: 1.5; letter-spacing: .05em; color: var(--ink-2); }
 .hero-meta .hm .hl { color: var(--accent); font-weight: 600; }
-.hero-meta .pin { font-size: 1.05em; margin-right: .4em; letter-spacing: 0; }
+.hero-meta .hm-loc { justify-self: end; text-align: right; }
+.hero-meta .pin { display: inline-block; vertical-align: -.15em; margin-right: .4em; color: var(--accent); }
+.hero-meta .pin svg { width: 1.05em; height: 1.05em; display: block; }
 @media (max-width: 760px) { .hero-meta { gap: 10px 18px; } .hero-meta .hm { font-size: 12.5px; } }
 
 /* who I am: roles above the box, cream terminal */
@@ -1003,7 +1005,7 @@ svg { display: block; }
 <section class="hero" id="top">
   <div class="wrap hero-meta mono">
     <p class="hm">4+ Years<br><span class="hl">Data Scientist &amp; ML Engineer</span></p>
-    <p class="hm"><span class="pin" aria-hidden="true">📍</span>Based in<br><span class="hl">Amman, Jordan</span></p>
+    <p class="hm hm-loc"><span class="pin" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>Based in<br><span class="hl">Amman, Jordan</span></p>
   </div>
 
   <div class="wrap hero-main">
@@ -1046,7 +1048,7 @@ svg { display: block; }
       <div class="tw-body">
         <p class="tw-l"><span class="tp">$</span><span>Master Educated with 4 years experience in <b class="w">statistical models, machine learning, and data visualization</b>.</span></p>
         <p class="tw-l"><span class="tc">✔</span><span>Skilled in <b>Python, tuning supervised and unsupervised machine learning models, and building dashboards with analytical storytelling.</b></span></p>
-        <p class="tw-l"><span class="tc">✔</span><span>Proven track record of deploying automated high-performance machine learning pipelines and scalable dashboards that <b class="g">improve business performance through data-driven insights.</b></span></p>
+        <p class="tw-l"><span class="tc">✔</span><span>Proven track record of deploying automated high-performance machine learning pipelines and scalable dashboards that improve business performance through data-driven insights.</span></p>
         <p class="tw-l"><span class="ta">→</span><span>Passionate about transforming complex data into actionable insights that drive smarter decision-making.</span></p>
         <p class="tw-l"><span class="tp">$</span><span><i class="tcaret"></i></span></p>
       </div>
@@ -1318,12 +1320,12 @@ svg { display: block; }
         <div class="xp-body"><div><div class="xp-in">
           <div class="meta"><div class="co-logo sf" role="img" aria-label="ScoreFex logo"></div><p class="mono">ScoreFex Intelligent Football Analysis<br>Full-time</p></div>
           <ul>
-            <li>Delivered a strong ROI within 4 months by implementing machine learning workflows that automated predictive models for football match outcomes.</li>
-            <li>Increased revenue through enhanced customer engagement by developing and deploying real-time football analysis dashboards that let customers extract key insights effortlessly.</li>
-            <li>Substantially reduced financial risk by leading the development of strategic sports-odds analytics solutions.</li>
+            <li>Generated revenue within four months by building automated machine learning pipelines for football match outcome prediction.</li>
+            <li>Increased customer acquisition by developing and deploying real-time football analytics dashboards that enabled customers to extract key insights effortlessly.</li>
+            <li>Substantially reduced financial risk by leading the development of strategic sports odds analytics solutions.</li>
           </ul>
           <div class="side">
-            <div class="hl-box"><b>ROI in 4 months</b><span>Automated match-outcome prediction</span></div>
+            <div class="hl-box"><b>Revenue in 4 months</b><span>Automated match-outcome prediction</span></div>
             <div class="tags"><span class="tag">Predictive Modelling</span><span class="tag">Real-time Dashboards</span><span class="tag">Odds Analytics</span></div>
             <button class="cert-card end-card" data-doc="scorefex" data-cursor="View" aria-label="Read the ScoreFex work endorsement letter">
               <span class="env" aria-hidden="true"><span class="env-back"></span><img class="env-letter" src="docs/scorefex-1.jpg?v=20261111" alt=""><span class="env-front"></span><span class="env-seal">✺</span></span>
@@ -1344,13 +1346,12 @@ svg { display: block; }
         <div class="xp-body"><div><div class="xp-in">
           <div class="meta"><div class="co-logo ay" role="img" aria-label="Accuyield logo"></div><p class="mono">Accuyield SDN BHD<br>Full-time · Promoted</p></div>
           <ul>
-            <li>Increased ROI by optimising and deploying existing machine learning models through statistical analysis and model-selection strategies.</li>
-            <li>Significantly reduced ML processing time through data science best practices and optimised feature engineering.</li>
-            <li>Improved operational efficiency by automating ML workflows with Airflow and Docker, deploying predictive models to cloud platforms with monitoring that ensured reliability and stability.</li>
+            <li>Improved return on investment (ROI) by enhancing predictive model performance through hyperparameter tuning and feature engineering.</li>
+            <li>Significantly reduced machine learning operational costs and processing time by optimising end-to-end machine learning pipelines.</li>
           </ul>
           <div class="side">
-            <div class="hl-box"><b>Production ML</b><span>Airflow + Docker on the cloud</span></div>
-            <div class="tags"><span class="tag">Airflow</span><span class="tag">Docker</span><span class="tag">Cloud</span><span class="tag">Feature Engineering</span></div>
+            <div class="hl-box"><b>Higher ROI</b><span>Tuned models, leaner ML pipelines</span></div>
+            <div class="tags"><span class="tag">Hyperparameter Tuning</span><span class="tag">Feature Engineering</span><span class="tag">ML Pipelines</span></div>
             <button class="cert-card end-card" data-doc="accuyield" data-cursor="View" aria-label="Read the Accuyield SDN BHD work endorsement letter">
               <span class="env" aria-hidden="true"><span class="env-back"></span><img class="env-letter" src="docs/accuyield-1.jpg" alt=""><span class="env-front"></span><span class="env-seal">✺</span></span>
               <span class="cc-text"><span class="mono">Accuyield · Work endorsement</span><b>Read the letter</b><small class="mono">2 pages · Read-only</small></span>
@@ -1370,13 +1371,13 @@ svg { display: block; }
         <div class="xp-body"><div><div class="xp-in">
           <div class="meta"><div class="co-logo ay" role="img" aria-label="Accuyield logo"></div><p class="mono">Accuyield SDN BHD<br>Full-time</p></div>
           <ul>
-            <li>Automated ETL data pipelines to significantly reduce costs, increased data accuracy by 9%, while substantially cutting data processing time.</li>
-            <li>Deployed end-to-end machine learning pipelines across multiple domains to support decision-making and drive business growth.</li>
-            <li>Developed analytical dashboards and reports to analyse data and monitor model performance, highlighting critical findings and trends.</li>
+            <li>Cut data pipeline operational costs and improved data accuracy by 9% by automating ETL workflows.</li>
+            <li>Supported decision-making and business growth by implementing end-to-end machine learning pipelines across multiple domains.</li>
+            <li>Enhanced operational reliability by implementing monitoring dashboards to continuously track predictive model performance.</li>
           </ul>
           <div class="side">
             <div class="hl-box"><b>+9% accuracy</b><span>From automated ETL pipelines</span></div>
-            <div class="tags"><span class="tag">ETL</span><span class="tag">SQL</span><span class="tag">ML Pipelines</span><span class="tag">Dashboards</span></div>
+            <div class="tags"><span class="tag">ETL</span><span class="tag">ML Pipelines</span><span class="tag">Monitoring Dashboards</span></div>
             <button class="cert-card end-card" data-doc="accuyield" data-cursor="View" aria-label="Read the Accuyield SDN BHD work endorsement letter">
               <span class="env" aria-hidden="true"><span class="env-back"></span><img class="env-letter" src="docs/accuyield-1.jpg" alt=""><span class="env-front"></span><span class="env-seal">✺</span></span>
               <span class="cc-text"><span class="mono">Accuyield · Work endorsement</span><b>Read the letter</b><small class="mono">2 pages · Read-only</small></span>
@@ -1396,11 +1397,11 @@ svg { display: block; }
     <h2 class="big" data-words style="margin-bottom:clamp(36px,5vw,70px)">The <span class="o">toolkit</span></h2>
     <div class="caps">
       <div class="cap rv"><div class="cap-h mono"><span>01</span><span>Build</span></div><h3>Machine Learning &amp; AI</h3>
-        <ul><li>scikit-learn</li><li>TensorFlow</li><li>PyTorch</li><li>NLP</li><li>Generative AI</li><li>AI Agents</li></ul></div>
+        <ul><li>scikit-learn</li><li>TensorFlow</li><li>AI Agents</li><li>Generative AI</li></ul></div>
       <div class="cap rv"><div class="cap-h mono"><span>02</span><span>Ship</span></div><h3>Data &amp; MLOps</h3>
-        <ul><li>Python</li><li>SQL</li><li>AWS</li><li>Airflow</li><li>Docker</li><li>ETL Pipelines</li></ul></div>
+        <ul><li>Python</li><li>SQL</li><li>Google Cloud</li><li>Docker</li><li>Airflow</li></ul></div>
       <div class="cap rv"><div class="cap-h mono"><span>03</span><span>Explain</span></div><h3>Analysis &amp; BI</h3>
-        <ul><li>EDA</li><li>Trend Analysis</li><li>Analysis &amp; Storytelling</li><li>Analytical Reports</li><li>Tableau</li><li>Power BI</li><li>Excel</li></ul></div>
+        <ul><li>Analysis &amp; Storytelling</li><li>Trend Analysis</li><li>Analytical Reports</li><li>EDA</li><li>Tableau</li><li>Power BI</li><li>Excel</li></ul></div>
       <div class="cap rv"><div class="cap-h mono"><span>04</span><span>Accelerate</span></div><h3>AI-Assisted Dev</h3>
         <ul><li>Claude Code</li><li>Claude Cowork</li><li>Codex</li><li>Anthropic API</li><li>OpenAI API</li><li>MCP</li></ul></div>
     </div>
